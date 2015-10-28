@@ -1,0 +1,7 @@
+def build(bld):
+	bld.objects(
+		source = 'main.cpp',
+		target = 'myobjects',
+		#use = 'JUBATUS-CLIENT OPENCV',
+		use = 'OPENCV',
+	)
