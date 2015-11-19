@@ -8,9 +8,10 @@
 
 
 ### How do I use this project? ###
-@frame_number ./build/Interframe_Diff videofilename
+@frame_number ./build/frame_number videofilename
 
 ### Libraries ###
 libopencv_core
 libopencv_highgui
 libopencv_imgproc
+
