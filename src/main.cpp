@@ -56,7 +56,10 @@ int main(int argc, char **argv)
 		capture.set(CV_CAP_PROP_POS_FRAMES, frnum);
 		
 		capture >> frame;
-		cv::putText(frame, to_string(frnum), cv::Point(50, 50), FONT_HERSHEY_COMPLEX, 1.2, cv::Scalar(0, 0, 200), 2, CV_AA);
+		stringstream ss;
+		ss << frnum;
+		string frnum_str = ss.str();
+		cv::putText(frame, frnum_str, cv::Point(50, 50), FONT_HERSHEY_COMPLEX, 1.2, cv::Scalar(0, 0, 200), 2, CV_AA);
 		imshow("frame", frame);
 		cvWaitKey(10);
 
@@ -80,8 +83,6 @@ int main(int argc, char **argv)
 			cv::waitKey(10);
 			cin >> frnum;
 		}
-		cout << c <<std::endl;
-
 	}
 
 	return 0;
