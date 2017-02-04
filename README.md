@@ -10,6 +10,12 @@
 - n:  番号入力(コンソールに数字を入力)  
 - q:  終了  
 
+### How do I build this project? ###
+```sh
+$ ./waf configure
+$ ./waf
+```
+
 ### How do I use this project? ###
 
 ```sh
